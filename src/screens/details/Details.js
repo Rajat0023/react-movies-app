@@ -9,7 +9,7 @@ import Youtube from 'react-youtube';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
-import StarBorderIcon from '@material-ui/icons/StarBorderIcon';
+import StarBorderIcon from '@material-ui/icons/StarBorder';
 
 class Details extends Component {
 
@@ -92,7 +92,7 @@ class Details extends Component {
         }
     return (
         <div className="details">
-            <Header />
+            <Header showBookShowButton="true"/>
             <div className="back">
                 <Typography onClick={this.backtoHomeHandler}>
                     &#60; Back to Home
