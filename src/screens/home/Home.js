@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './Home.css';
+import Details from '../../screens/details/Details';
 import Header from '../../common/header/Header';
 import { withStyles } from '@material-ui/core/styles';
 import moviesData from '../../common/movieData';
@@ -9,7 +10,7 @@ import artists from '../../common/artists';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
-import { Typography, MenuItem, Checkbox } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
 import Input from '@material-ui/core/Input';
@@ -77,7 +78,7 @@ class Home extends Component {
     }
 
     movieClickHandler = (movieId) =>{
-        ReactDOM.render(<Details movieId={movie.id} />, document.getElementById('root'));
+        ReactDOM.render(<Details movieId={movieId} />, document.getElementById('root'));
     }
 
     render() {
